@@ -2,16 +2,7 @@
 //14212 -> нет
 //12821 -> да
 //23432 -> да
-
-Console.WriteLine("Введите пятизначное число");
-int n = Convert.ToInt32(Console.ReadLine());
-
-if (n > 9999 & n < 10000 )
-{
-    Console.WriteLine("Данное число не является пятизначным");
-
-}
-else
+void palindrom(int n)
 {
     int a,b,c,d;
     a = n / 10000;
@@ -26,5 +17,20 @@ else
     {
         Console.WriteLine("Не является палиндромом");
     }
+    return;
+}
+
+Console.WriteLine("Введите пятизначное число");
+int n = Convert.ToInt32(Console.ReadLine());
+
+if (n > 9999 & n < 10000 )
+{
+    Console.WriteLine("Данное число не является пятизначным");
+
+}
+else
+{
+   palindrom(n);
+  
     
 }
